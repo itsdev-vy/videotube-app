@@ -2,8 +2,10 @@
   "name": "chai-backend",
   "version": "1.0.0",
   "description": "A youtube like clone",
+  "type": "module",
   "main": "index.js",
   "scripts": {
+    "dev": "nodemon src/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -14,6 +16,9 @@
     "mern",
     "stack"
   ],
-  "author": "vinay yadav",
-  "license": "ISC"
+  "author": "Vinay Yadav",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.1.6"
+  }
 }
