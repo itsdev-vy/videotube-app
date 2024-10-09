@@ -10,4 +10,11 @@ app.use(express.urlencoded({ extended: true, limit: '16kb' }));    //To handle a
 app.use(express.static('public'));  //Store pdf or image as public asset anyone can access
 app.use(cookieParser());    //To access browser cookies for any security purpose
 
+//routes import
+import userRouter from "./routes/user.routes.js";
+
+
+//routes declaration
+app.use("/api/v1/users", userRouter);
+
 export { app };
